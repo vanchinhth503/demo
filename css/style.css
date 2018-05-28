@@ -72,11 +72,13 @@ a#logo-1{
 	right:0px;
 }
 input{
+	border-radius: 6px 0px 6px 6px;
 	height: 30px;
 	width: 220px;
 	margin-right: -5px;
 }
 button{
+	border: 5px;
 	height: 30px;
 	width: 76px;
 	background: #97455f;
@@ -116,10 +118,28 @@ button{
 	margin-top: 140px;
 	min-height: 1000px;
 }
-.sideshow img{
+.sideshow {
 	padding-top: 30px;
 	width: 100%;
 }
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.mySlides {
+	display: inline-block;}
 .wp-inner-button{
 	width: 900px;
 	margin: 0px auto;
@@ -235,12 +255,22 @@ li.footer-left{
 .reson h4{
 	padding-left: 20px;
 }
+#tel{
+	font-size: 14px;
+	color: #999999;
+}
+span{
+	color: #97455f;
+}
 li.footer-right{
 	width: 225px;
 }
 textarea{
 	width: 220px;
 	height: 112px;
+}
+button{
+	border: 2px;
 }
 .footer-right form{
 	line-height: 40px;
@@ -256,4 +286,6 @@ textarea{
 }
 #coppy-right{
 	padding: 25px 0px 22px;
+	color: #999999;
+	font-size: 12px;
 }
