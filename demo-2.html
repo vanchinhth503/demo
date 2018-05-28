@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="css/cleafix.css">
 	<link rel="stylesheet" href="css/style-2.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<script type="text/javascript" src="css/javascrip.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -81,7 +80,30 @@
 						  <span class="dot" onclick="currentSlide(4)"></span>
 						  <span class="dot" onclick="currentSlide(5)"></span>
 						</div>
-						
+							<script>
+								var slideIndex = 1;
+								showSlides(slideIndex);
+
+								function currentSlide(n) {
+								  showSlides(slideIndex = n);
+								}
+
+								function showSlides(n) {
+								  var i;
+								  var slides = document.getElementsByClassName("mySlides");
+								  var dots = document.getElementsByClassName("dot");
+								  if (n > slides.length) {slideIndex = 1}    
+								  if (n < 1) {slideIndex = slides.length}
+								  for (i = 0; i < slides.length; i++) {
+								      slides[i].style.display = "none";  
+								  }
+								  for (i = 0; i < dots.length; i++) {
+								      dots[i].className = dots[i].className.replace(" active", "");
+								  }
+								  slides[slideIndex-1].style.display = "block";  
+								  dots[slideIndex-1].className += " active";
+								}
+							</script>
 						</div>
 						<div id="title-lorem" class="wp-inner-button">
 							<div class="text-align">
