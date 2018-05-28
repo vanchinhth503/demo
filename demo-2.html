@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8"">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Demo-2</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/cleafix-2.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cleafix.css">
+	<link rel="stylesheet" href="css/style-2.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
@@ -57,7 +58,22 @@
 					<!-- End Menu Content-button -->
 					<div class="wp-inner-button">
 						<div class="sideshow">
-							<img src="imges/big-img.png" alt="" ">
+							<div class="mySlides fade">
+						    <img src="imges/big-img.png" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+						   <img src="imges/big-img.png" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+						  <img src="imges/big-img.png" style="width:100%">
+						</div>
+						<br>
+						<div class="text-align">
+						  <span class="dot" onclick="currentSlide(1)"></span> 
+						  <span class="dot" onclick="currentSlide(2)"></span> 
+						  <span class="dot" onclick="currentSlide(3)"></span> 
+						</div>
+						
 						</div>
 						<div id="title-lorem" class="wp-inner-button">
 							<div class="text-align">
@@ -174,7 +190,7 @@
 					<li>
 						<div class="footer-between fl-left">
 							<h1>Company Details</h1>
-							<div>
+							<div id="tel">
 								<ul>
 									<li>Company Name</li>
 									<li>Street Name & Number</li>
@@ -184,7 +200,7 @@
 								<ul>
 									<li>Tel: xxxxx xxxxxxxxxx</li>
 									<li>Fax: xxxxx xxxxxxxxxx</li>
-									<li>Email: contact@mydomain.com</li>
+									<li>Email: <span>contact@mydomain.com</span></li>
 								</ul>
 								<ul>
 									<li>Office Hours</li>
