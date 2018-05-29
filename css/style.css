@@ -26,12 +26,14 @@
 }
 #header-right li{
 	float: left;
+	padding-left: 5px;
 }
 #header-right li a{
 	display: inline-block;
 	color: #97455f;
 	font-size: 12px;
 	border-left: 1px solid #97455f;
+	padding-left: 5px;
 }
 #header-right{
 	 padding-top: 20px;
