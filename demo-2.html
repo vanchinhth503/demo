@@ -4,9 +4,9 @@
 	<meta charset="UTF-8"">
 	<title>Demo-2</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/cleafix.css">
+	<link rel="stylesheet" href="css/cleafix-2.css">
 	<link rel="stylesheet" href="css/style-2.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="font/fonts.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -20,11 +20,11 @@
 					<a href=""><img src="imges/iss.png" alt=""></a>
 				</div>
 				<div id="header-right" class="fl-right ">
-					<ul  >
-						<li><a href="">Sign Up</a></li>
-						<li><a href="">Login</a></li>
-						<li><a href="">RSS Feeds</a></li>
-						<li><a href="">Archived News</a></li>
+					<ul>
+						<li class="sign"><a href="">Sign Up</a></li>
+						<li class="login"><a href="" >Login</a></li>
+						<li class="feeds"><a href="" >RSS Feeds</a></li>
+						<li class="new"><a href="" >Archived News</a></li>
 					</ul>
 				</div>
 			</div>
@@ -43,8 +43,8 @@
 					<button onclick="document.getElementById()">SUBMIT</button>
 				</div>
 				<div class="content-button wp-inner">
-					<div id="main-menu" class="fl-left clearfix">
-						<ul>
+					<div id="menu" class="fl-left clearfix">
+						<ul id="main-menu">
 							<li><a href="">HOME</a></li>
 							<li><a href="">STYLE DEMO</a></li>
 							<li><a href="">FULL WIDTH</a></li>
@@ -58,28 +58,28 @@
 					<div class="wp-inner-button">
 						<div class="sideshow">
 							<div class="mySlides fade">
-						    <img src="imges/big-img.png" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-						   <img src="imges/big-img.png" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-						  	<img src="imges/big-img.png" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-						  	<img src="imges/big-img.png" style="width:100%">
-						</div>
-						<div class="mySlides fade">
-						  	<img src="imges/big-img.png" style="width:100%">
-						</div>
-						<br>
-						<div class="text-align">
-						  <span class="dot" onclick="currentSlide(1)"></span> 
-						  <span class="dot" onclick="currentSlide(2)"></span> 
-						  <span class="dot" onclick="currentSlide(3)"></span>
-						  <span class="dot" onclick="currentSlide(4)"></span>
-						  <span class="dot" onclick="currentSlide(5)"></span>
-						</div>
+						    	<img src="imges/soi1.jpg" style="width:100%">
+							</div>
+							<div class="mySlides fade">
+						  	 	<img src="imges/soi2.jpg" style="width:100%">
+							</div>
+							<div class="mySlides fade">
+						  		<img src="imges/soi3.jpg" style="width:100%">
+							</div>
+							<div class="mySlides fade">
+							  	<img src="imges/soi1.jpg" style="width:100%">
+							</div>
+							<div class="mySlides fade">
+							  	<img src="imges/soi2.jpg" style="width:100%">
+							</div>
+							<br>
+							<div class="text-align">
+								 <span class="dot" onclick="currentSlide(1)"></span> 
+								 <span class="dot" onclick="currentSlide(2)"></span> 
+								 <span class="dot" onclick="currentSlide(3)"></span>
+								 <span class="dot" onclick="currentSlide(4)"></span>
+								 <span class="dot" onclick="currentSlide(5)"></span>
+							</div>
 							<script>
 								var slideIndex = 1;
 								showSlides(slideIndex);
@@ -166,7 +166,7 @@
 									<a href="" class="fl-left"><img src="imges/circle.png" alt=""></a>
 									<h4 class="goes-here">Title Goes Here</h4>
 									<p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.</p>
-									<h5 class="list-post-title">Read More »</h5>
+									<h5 ><a href="">Read More »</a></h5>
 								</div>
 								<div class="title-goes fl-right">
 									<div class="text-align">
@@ -174,7 +174,7 @@
 									</div>
 									<a href="" class="fl-left"><img src="imges/path.png" alt=""></a>
 									<h4 class="goes-here">Tommy Tanker - CEO</h4>
-									<h5 class="list-post-title">View This Project »</h5>
+									<h5 ><a href="">View This Project »</a></h5>
 									<p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
 								</div>
 							</div>
@@ -196,7 +196,7 @@
 				<ul class="wp-inner">
 					<li class="fl-left">
 						<div class="footer-left fl-left">
-							<h1>Latest From The Blog</h1>
+							<h1 class="colu">Latest From The Blog</h1>
 							<div class="footer-text fl-left">
 								<ul class="list-post-footer">
 									<li class="clearfix">
@@ -221,7 +221,7 @@
 						<div class="footer-between fl-left">
 							<h1>Company Details</h1>
 							<div id="tel">
-								<ul>
+								<ul class="details">
 									<li>Company Name</li>
 									<li>Street Name & Number</li>
 									<li>Town</li>
@@ -244,11 +244,11 @@
 						<div class="footer-right fl-left">
 							<h1>Contact Us</h1>	
 							<form action="">
-							<input type="text" name="Name" placeholder="Name"><br>
-							<input type="text" name="Email" placeholder="Emai"><br>
-							<textarea name="passion" id="passion" cols="15" rows="10" placeholder="Message"></textarea><br>
-							<button onclick="document.getElementById()">SUBMIT</button>
-						</form>
+								<input type="text" name="Name" placeholder="Name" ><br>
+								<input type="text" name="Email" placeholder="Emai"><br>
+								<textarea name="passion" id="passion" cols="15" rows="10" placeholder="Message"></textarea><br>
+								<button onclick="document.getElementById()">SUBMIT</button>
+							</form>
 						</div>					
 					</li>
 				</ul>
