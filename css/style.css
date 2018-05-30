@@ -148,8 +148,8 @@ a#logo-1{
  	cursor: pointer;
  	height: 15px;
  	width: 15px;
- 	margin: 0 2px;
- 	background-color: #bbb;
+ 	margin: 2px;
+ 	background-color: #333333;
  	border-radius: 50%;
  	display: inline-block;
  	transition: background-color 0.6s ease;
@@ -163,7 +163,7 @@ a#logo-1{
 	width: 100%;
 }
 .wp-inner-button{
-	width: 900px;
+	max-width: 900px;
 	margin: 0px auto;
 }
 .text-align h2{
@@ -178,7 +178,7 @@ a#logo-1{
 	margin-top: 40px;
 }
 .list-post{
-	width: 300px;
+	max-width: 300px;
 }
 .list-post li{
 	padding-bottom: 40px;
@@ -288,16 +288,17 @@ li.footer-left{
 .footer-left h1{
 	font-size: 16px;
 	color: #333333;
+	font-weight: 500;
 }
-/*.colu{
-	font-weight: 500px;
-	display:block;
-}*/
 .footer-text{
 	width: 486px;
 }
 .footer-between{
 	width: 245px;
+}
+.footer-between h1{
+	color: #333333;
+	font-weight: 500;
 }
 .reson p{
 	width: 328px;
@@ -308,6 +309,7 @@ li.footer-left{
 }
 .reson h4{
 	padding-left: 20px;
+	font-weight: 500;
 }
 #tel{
 	font-size: 12px;
@@ -356,6 +358,10 @@ textarea{
 	background: #97455f;
 	color: #ffffff;
 	font-family: 'Georgia Regular';
+}
+.footer-right h1{
+	color: #333333;
+	font-weight: 500;
 }
 /*End content*/
 #coppy-right{
